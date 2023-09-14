@@ -1,2 +1,7 @@
 # scott-py
-행복하세요~
+
+# environment variables
+
+```bash
+export OPENAI_API_KEY="sk-xyz"
+```
