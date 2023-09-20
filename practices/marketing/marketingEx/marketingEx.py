@@ -9,10 +9,6 @@ from langchain.schema import (
     SystemMessage
 )
 
-import os
-
-os.environ["OPENAI_API_KEY"] = "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"
-
 chat = ChatOpenAI(temperature=0.8)
 system_message = "assistant는 마케팅 문구 작성 도우미로 동작한다. user의 내용을 참고하여 마케팅 문구를 작성해라"
 system_message_prompt = SystemMessage(content=system_message)

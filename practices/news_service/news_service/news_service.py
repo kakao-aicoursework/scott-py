@@ -17,10 +17,6 @@ from langchain.schema import SystemMessage
 from langchain.utilities import DuckDuckGoSearchAPIWrapper
 import tiktoken
 
-import os
-os.environ["OPENAI_API_KEY"] = "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"
-
-
 
 ###########################################################
 # Helpers
