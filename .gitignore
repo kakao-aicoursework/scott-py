@@ -2,3 +2,9 @@ venv/*
 **/.web/**/*
 **/.env
 **/pynecone.db
+__pycache__/
+*.db
+**/*.db
+**/.pytest_cache
+app/chroma
+app/history

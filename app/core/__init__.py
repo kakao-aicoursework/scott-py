@@ -22,4 +22,4 @@ def init():
         load_data_and_upload_chroma()
         _INITIALIZED = True
 
-init()
+# init()

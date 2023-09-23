@@ -3,8 +3,15 @@ import reflex as rx
 from dotenv import load_dotenv
 
 PROJECT_DIR = os.path.abspath(os.path.dirname(__file__))
+ENV_PATH = os.path.join(PROJECT_DIR, ".env")
 
-load_dotenv(os.path.join(PROJECT_DIR, ".env"))
+if not os.path.exists(ENV_PATH):
+    raise FileNotFoundError(
+        f"{ENV_PATH}를 찾을 수 없습니다. "
+        f"OPENAI_API_KEY가 정의된 env 파일이 먼저 정의되어야 정상 작동됩니다."
+    )
+
+load_dotenv(ENV_PATH)
 
 
 class AppConfig(rx.Config):
@@ -35,3 +42,7 @@ config = AppConfig(
     db_url="sqlite:///reflex.db",
     env=rx.Env.DEV,
 )
+
+from core import init
+
+init()

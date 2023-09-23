@@ -140,7 +140,8 @@ def load_data_and_upload_chroma():
         # get keywords for each data source
         summarized_text = summarize_chain.run({"text": full_text})
 
-        SUMMARY[data_source] = summarized_text.replace("\n", "")
+        SUMMARY[f"{data_source}"] = summarized_text.replace("\n", "")
+    print(SUMMARY)
 
     with open(SUCCESS_PATH, "w+", encoding="utf-8") as file:
         json.dump(SUMMARY, file, ensure_ascii=False, indent=4)
