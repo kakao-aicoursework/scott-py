@@ -1,0 +1,4 @@
+venv/*
+**/.web/**/*
+**/.env
+**/pynecone.db
