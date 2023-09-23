@@ -2,6 +2,7 @@ import os
 import reflex as rx
 from dotenv import load_dotenv
 
+
 PROJECT_DIR = os.path.abspath(os.path.dirname(__file__))
 ENV_PATH = os.path.join(PROJECT_DIR, ".env")
 
@@ -40,7 +41,6 @@ class AppConfig(rx.Config):
 config = AppConfig(
     app_name="app",
     db_url="sqlite:///reflex.db",
-    env=rx.Env.DEV,
 )
 
 from core import init

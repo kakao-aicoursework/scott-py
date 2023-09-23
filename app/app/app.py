@@ -5,10 +5,6 @@ from typing import Literal
 import reflex as rx
 
 from core import generate_answer
-from rxconfig import config
-
-docs_url = "https://pynecone.io/docs/getting-started/introduction"
-filename = f"{config.app_name}/{config.app_name}.py"
 
 
 class State(rx.State):
