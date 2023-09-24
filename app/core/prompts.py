@@ -66,7 +66,7 @@ Answer:
 """
 
 # BUG_SAY_SORRY: input
-BUG_REQUEST_CONTEXT = """\
+BUG_REQUEST_CONTEXT = COMMON_CONTEXT + """\
 Your job is to read the message and request additional information, \
 for example, versions of the libraries you are using. \
 The language of answer must be korean.
