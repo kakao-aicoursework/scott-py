@@ -1,4 +1,3 @@
-from .const import *
 from .chroma import get_similar_docs, query_db, init_chroma
 from .preprocess import load_data_and_upload_chroma
 from .llm import init_chains, create_answer, generate_answer
@@ -22,4 +21,4 @@ def init():
         load_data_and_upload_chroma()
         _INITIALIZED = True
 
-# init()
+init()

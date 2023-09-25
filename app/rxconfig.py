@@ -43,6 +43,3 @@ config = AppConfig(
     db_url="sqlite:///reflex.db",
 )
 
-from core import init
-
-init()
